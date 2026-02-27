@@ -1,0 +1,360 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004d99;
+    text-decoration: underline;
+}
+
+/* Header Section */
+.header {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid #0066cc;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #222;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 15px;
+    background-color: #f0f7ff;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-2px);
+    background-color: #e1f0ff;
+}
+
+.contact-item i {
+    color: #0066cc;
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+.main-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0066cc;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #004d99;
+}
+
+/* Summary Section */
+.summary {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    text-align: justify;
+    color: #444;
+}
+
+/* Item Styling for Projects and Education */
+.item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    border-left: 4px solid #0066cc;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.item-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+    margin-right: 15px;
+}
+
+.item-date {
+    font-size: 1rem;
+    color: #666;
+    white-space: nowrap;
+    background-color: #e6f2ff;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.item-content {
+    line-height: 1.6;
+    color: #444;
+}
+
+.item-content strong {
+    color: #222;
+}
+
+/* Skills & Languages */
+.skills-container, .languages-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skill-category, .language-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f0f7ff;
+    border-radius: 6px;
+    border-left: 3px solid #0066cc;
+}
+
+.category-title {
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #222;
+    font-size: 1.1rem;
+}
+
+.category-content {
+    padding-left: 10px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Hobbies */
+.hobbies {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 15px;
+    background-color: #f0f7ff;
+    border-radius: 6px;
+    color: #444;
+}
+
+.hobbies p {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d1e7ff;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    .header {
+        padding: 20px;
+    }
+    
+    .header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .contact-item {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .main-content {
+        padding: 20px;
+    }
+    
+    .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .item-date {
+        margin-top: 8px;
+    }
+    
+    .skills-container, .languages-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .item-title {
+        font-size: 1.1rem;
+    }
+    
+    .item {
+        padding: 15px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+        max-width: 100%;
+        font-size: 12pt;
+    }
+    
+    .header {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .main-content {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+    }
+    
+    .item {
+        break-inside: avoid;
+    }
+    
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .contact-item {
+        background-color: transparent;
+    }
+    
+    .item-date {
+        background-color: transparent;
+    }
+    
+    .skill-category, .language-item, .hobbies {
+        background-color: transparent;
+        border-left: none;
+    }
+    
+    .footer {
+        border-top: 1px solid #aaa;
+    }
+}
