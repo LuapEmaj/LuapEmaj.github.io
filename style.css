@@ -270,6 +270,12 @@ a:hover {
 .nav a:hover {
     color: #004d99;
 }
+#main-title {
+    letter-spacing: 2px; /* Adds 2px of breathing room between every letter */
+    word-spacing: 0.2rem;   /* Adds extra space specifically between words */
+    line-height: 1.5;    /* Prevents letters from touching the line above/below */
+
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
