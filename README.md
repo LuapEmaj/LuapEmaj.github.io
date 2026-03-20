@@ -12,5 +12,5 @@ To view the site, visit [https://luapemaj.github.io](https://luapemaj.github.io)
 
 - GitHub Pages
 - Markdown
-- HTML/CSS
+- HTML/CSS/JavaScript
 
